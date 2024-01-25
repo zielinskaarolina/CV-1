@@ -1,0 +1,285 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #a1a5ff;
+	font-family: 'Arimo', sans-serif;
+	color: white;
+	overflow-x: hidden;
+	min-height: 100vh;
+	width: 100vw;
+	background-image: url('./motyw.png');
+	background-size: cover;
+}
+
+header {
+	font-size: 4rem;
+	display: flex;
+	align-items: center;
+	padding: 4rem;
+	height: 15vh;
+}
+.hello {
+	width: 300px;
+	position: absolute;
+	z-index: 1;
+	background-color: #a1a5ff;
+	transform: translateX(23px);
+}
+.first {
+	min-height: 100vh;
+	width: 100vw;
+}
+
+.second {
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.second h1 {
+	font-size: 3rem;
+}
+
+.projects {
+	padding: 2rem;
+	width: 80vw;
+	min-height: 80vh;
+	background: rgba(217, 217, 217, 0.25);
+	border-radius: 41px;
+	margin: 3rem;
+	display: flex;
+
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+}
+.projects div {
+	width: 70vw;
+	height: 10vh;
+	background: rgba(161, 165, 255, 0.48);
+	border-radius: 41px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+.projects .allProject {
+	background: rgba(255, 255, 255, 0.24);
+	height: 15vh;
+}
+.allProject {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.allProject img {
+	max-width: 6vw;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.first {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.me {
+	margin-top: 2rem;
+	text-align: center;
+	font-size: 1.3rem;
+}
+
+.me p {
+	margin-bottom: 3px;
+}
+
+.line {
+	transform: translateY(-27px);
+}
+
+.cele {
+	position: absolute;
+	transform: translateX(-80px);
+}
+
+.cele {
+	width: 160px;
+	text-align: right;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+.cele p {
+	font-size: 0.8rem;
+}
+
+.cele .title {
+	font-size: 1.1rem;
+	padding-bottom: 5px;
+}
+.umiejetnosci {
+	position: absolute;
+	transform: translate(100px, 150px);
+}
+
+.umiejetnosci .title {
+	transform: translate(-20px, 50px);
+}
+
+.edukacja {
+	position: absolute;
+	transform: translate(-70px, 430px);
+}
+
+.dane {
+	position: absolute;
+	transform: translate(100px, 550px);
+}
+.zainteresowania {
+	position: absolute;
+	transform: translate(-120px, 720px);
+}
+
+.dodatkowe {
+	position: absolute;
+	transform: translate(100px, 880px);
+}
+
+.history {
+	padding-top: 20px;
+}
+
+@media(min-width: 500px) {
+	.umiejetnosci img {
+		width: 220px;
+	}
+	.cele {
+		width: 200px;
+		transform: translateX(-130px);
+	}
+	.cele p {
+		font-size: 1rem;
+	}
+
+	.edukacja img {
+		width: 400px;
+		transform: translateX(-60px);
+	}
+	.zainteresowania img {
+		width: 320px;
+		transform: translateX(-60px);
+	}
+	.dodatkowe img {
+		width: 350px;
+		transform: translateX(8px);
+	}
+}
+
+@media(min-width: 1300px) {
+	.umiejetnosci img {
+		width: 300px;
+		transform: translate(100px,-70px);
+	}
+	.umiejetnosci .title {
+		font-size: 1.7rem;
+		transform: translateX(33px);
+	}
+	.cele {
+		width: 300px;
+		transform: translateX(-300px);
+	}
+	.cele p {
+		font-size: 1.2rem;
+	}
+	.cele .title{
+		font-size: 1.7rem;
+		padding-bottom: 1.3rem;
+	}
+
+	.edukacja img {
+		width: 550px;
+		transform: translateX(-200px);
+	}
+	.zainteresowania img {
+		width: 450px;
+		transform: translateX(-230px);
+	}
+	.dodatkowe img {
+		width: 500px;
+		transform: translateX(100px);
+	}
+	.dane img{
+		width: 260px;
+		transform: translateX(100px);
+	}
+
+	.allProject {
+		gap: 3rem;
+	}
+
+	.allProject img{
+		height: 10vh;
+	}
+}
+
+
+.first-view{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	
+}
+.first-view h1{
+	font-size: 2rem;
+	margin-bottom: 15px;
+}
+.first-view p{
+	font-size: 17px;
+	padding: 0 3rem;
+	max-width: 594px;
+}
+
+.first-view img.pixel-character{
+	margin-top: -30px;
+}
+
+.first-view img.arrow{
+	width: 60px;
+	position: absolute;
+	bottom: 25px;
+}
+
+.about-me{
+	height: 40vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.about-me h1{
+	font-size: 3rem;
+}
+
+.about-me p{
+	margin-top: 4rem;
+	padding: 0 3rem;
+	max-width: 776px;
+}
